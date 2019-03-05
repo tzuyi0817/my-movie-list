@@ -38,7 +38,7 @@
     const regex = new RegExp(searchInput.value, 'i')
     results = data.filter(movie => movie.title.match(regex))
     console.log(results)
-    getTotalPage(results)
+    getTotalPages(results)
     getPageData(1, results)
   })
 
